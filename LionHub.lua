@@ -123,8 +123,8 @@ end)
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "Chest Farm",
-    Text = "by thaibao7444",
-    Icon = "rbxthumb://type=Asset&id=16805063081&w=150&h=150",
+    Text = "by Lion Hub",
+    Icon = "rbxthumb://type=Asset&id=132461437208201&w=150&h=150",
     Duration = math.huge,
     Callback = AllowRunServiceBind,
     Button1 = "ON",
