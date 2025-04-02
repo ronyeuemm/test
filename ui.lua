@@ -1233,8 +1233,8 @@ Config = {
     Other = Color3.fromRGB(2, 182, 255),
     SizeLib = UDim2.new(0, 550, 0, 330)
 }
-local dm = LIB:Tab("Setting", "", "rbxassetid://11446835336") -- Name/Des/LogoID
-local dd = LIB:Tab("Hop Server", "", "rbxassetid://11446835336")
+local dm = LIB:Tab("Setting", "", "rbxassetid://123709024751036") -- Name/Des/LogoID
+local dd = LIB:Tab("Hop Server", "", "rbxassetid://123709024751036")
 
 dm:Line() --make line
 dm:Label("Time") -- Label
