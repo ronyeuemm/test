@@ -1222,12 +1222,12 @@ local bS = {}
 end
 
 local LIB = bm:Window(
-    "Shinichi Hop Boss", --Namehub
-    "| By Shinichi", --Desc
+    "Lion Hop", --Namehub
+    "| By Lion Hub", --Desc
     Enum.KeyCode.F1 -- KeyCode-Toggle
 )
 Config = {
-    Logo = "rbxassetid://78774998900413",
+    Logo = "rbxassetid://123709024751036",
     TabColor = Color3.fromRGB(15, 15, 15),
     StrokeColor = Color3.fromRGB(23, 23, 23),
     Other = Color3.fromRGB(2, 182, 255),
@@ -1255,6 +1255,6 @@ dd:Toggle("Auto Rip Indra True From", "Hop Rip Indra", "rbxassetid://16028602261
 end)
 dd:Toggle("Auto Hop Mirage Island", "Hop Mirage Island", "rbxassetid://122772515872491", false, function() loadstring(game:HttpGet("https://raw.githubusercontent.com/shinichi-dz/shinhop/refs/heads/main/rip%20indra.luau.txt"))()
 end)
-dm:Button("CopyLinkDiscord", "https://discord.gg/wWX6EAYzrA", function()
-    print("https://discord.gg/wWX6EAYzrA")
+dm:Button("CopyLinkDiscord", "https://discord.gg/Vc94WAA4bm", function()
+    print("https://discord.gg/Vc94WAA4bm")
 end)
