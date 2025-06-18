@@ -17,15 +17,18 @@ blurEffect.Name = "UIBlur"
 blurEffect.Size = 15
 blurEffect.Parent = Lighting
 
+-- Function to calculate responsive sizes
 local function getResponsiveSize()
     local viewportSize = workspace.CurrentCamera.ViewportSize
     local baseWidth = 1000
     local baseHeight = 750
-
-    local scaleX = viewportSize.X / 1920 
+    
+    -- Scale factor based on screen size
+    local scaleX = viewportSize.X / 1920 -- Assuming 1920x1080 as base resolution
     local scaleY = viewportSize.Y / 1080
-    local scale = math.min(scaleX, scaleY, 1) 
-
+    local scale = math.min(scaleX, scaleY, 1) -- Don't scale larger than original
+    
+    -- Minimum scale to ensure UI is not too small
     scale = math.max(scale, 0.6)
     
     local width = baseWidth * scale
@@ -469,6 +472,7 @@ local function startLEDAnimation()
     end)
 end
 
+-- Handle viewport size changes for responsive design
 workspace.CurrentCamera:GetPropertyChangedSignal("ViewportSize"):Connect(function()
     local newSize, newPosition = getResponsiveSize()
     local resizeTween = TweenService:Create(
@@ -482,6 +486,7 @@ workspace.CurrentCamera:GetPropertyChangedSignal("ViewportSize"):Connect(functio
     resizeTween:Play()
 end)
 
+-- Start animations
 spawn(function()
     startLEDAnimation()
     changeDynamicText()
